@@ -1,0 +1,49 @@
+@import './fonts/font-nunito.scss';
+@import './fonts/font-montserrat.scss';
+@import './utilities/grid-system.scss';
+
+$font-color-primary: #4a4a4a;
+$font-color-secondary: #f05a28;
+$font-nunito: nunito-sans;
+$font-montserrat: montserrat;
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: inherit;
+}
+
+html {
+      font-size: 62.5%;
+      width: 100%;
+}
+
+body {
+      background-color: #fff;
+      box-sizing: border-box;
+      position: relative;
+      font-family: $font-nunito;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+}
+
+.container {
+      max-width: 1200px;
+      min-width: 288px;
+      width: 90%;
+      margin: 0 auto;
+}
+
+@import './sections/header';
+@import './sections/section-hero';
+@import './sections/section-talhunt-features';
+@import './sections/section-hiring-process';
+@import './sections/section-pricing';
+@import './sections/section-customer-feedback';
+@import './sections/section-contact-us';
+@import './sections/footer';
+@import './sections/modal-window';
+
+@import './sections/decors-animations.scss';

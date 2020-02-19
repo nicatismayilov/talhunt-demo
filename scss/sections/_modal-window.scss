@@ -1,0 +1,96 @@
+.modal-window {
+      position: fixed;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba($color: #000000, $alpha: .6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+
+      .container {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            align-items: center;
+            // position: relative;
+
+            .modal-window-content {
+                  border: 2rem solid #322754;
+                  border-radius: 2rem;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background-color: black;
+                  width: 90%;
+                  height: 90%;
+                  position: relative;
+
+                  .close-btn {
+                        height: 7rem;
+                        width: 7rem;
+                        background-image: url('../../imgs/close-btn.png');
+                        background-size: contain;
+                        background-color: #322754;
+                        border-radius: 100%;
+                        border: .3rem solid rgba($color: #000000, $alpha: .8);
+                        position: absolute;
+                        top: -8%;
+                        right: -3%;
+                        cursor: pointer;
+                        transition: all .4s ease-in-out;
+
+                        &:hover {
+                              animation-name: scaleUpAndDown;
+                              animation-duration: .3s;
+                              animation-timing-function: ease-in;
+                        }
+                  }
+
+                  video {
+                        width: 100%;
+                        height: 100%;
+
+                        &:focus {
+                              outline: none;
+                        }
+                  }
+            }
+      }
+}
+
+@keyframes scaleUpAndDown {
+      0% {
+            transform: scale(1);
+      }
+
+      25% {
+            transform: scale(1.05);
+      }
+
+      50% {
+            transform: scale(1.1);
+      }
+
+      75% {
+            transform: scale(1.05);
+      }
+
+      100% {
+            transform: scale(1);
+      }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+      .modal-window {
+            .container {
+                  .modal-window-content {
+                        .close-btn {
+                              top: -8%;
+                              right: -6%;
+                        }
+                  }
+            }
+      }
+}

@@ -1,0 +1,286 @@
+.section-customer-feedback {
+      width: 100%;
+      height: auto;
+}
+
+.clients-feedback {
+      height: 24.9rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10rem;
+}
+
+.clients-feedback-title-box {
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+
+      .double-quotes-img {
+            width: 4.1rem;
+            height: 2.8rem;
+            margin-right: 2rem;
+      }
+
+      .clients-feedback-title {
+            font-family: $font-montserrat;
+            font-size: 4.4rem;
+            font-weight: 600;
+            color: $font-color-secondary;
+            text-align: start;
+      }
+}
+
+.clients-feeback-slider {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .clients-feedback-slider-main {
+            width: 82.5%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+
+            .clients-feedback-slider-column {
+                  transition: all 1.5s ease-in-out;
+                  transform: translateY(-24.9rem);
+                  width: 98%;
+
+                  .client-feedback-slider-item {
+                        height: 22.9rem;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 1rem;
+                        background-color: #fff;
+                        box-shadow: 0 .1rem .5rem rgba(168, 168, 168, .5);
+                        margin-bottom: 2rem;
+                        margin-top: 2rem;
+
+                        &:first-child {
+                              margin-top: 1rem;
+                        }
+
+                        &:last-child {
+                              margin-bottom: 1rem;
+                        }
+
+                        .feedback-desc {
+                              width: 84.2%;
+                              font-size: 1.8rem;
+                              line-height: 1.5;
+                              color: $font-color-primary;
+                        }
+
+                        .client-info {
+                              height: 8.2rem;
+                              width: 84.2%;
+                              display: flex;
+                              justify-content: flex-start;
+                              align-items: flex-end;
+
+                              .client-img {
+                                    height: 5.6rem;
+                                    width: 5.6rem;
+                                    margin-right: 3rem;
+                              }
+
+                              .client-name-box {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    .client-name {
+                                          font-size: 1.6rem;
+                                          font-weight: bold;
+                                          color: $font-color-primary;
+                                    }
+
+                                    .client-job-position {
+                                          font-size: 1.6rem;
+                                          color: $font-color-primary;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+
+      .clients-feedback-slider-btns {
+            height: 100%;
+            width: calc(100% - 82.5%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .slider-btn {
+                  height: 4.1rem;
+                  width: 4.1rem;
+                  background: transparent;
+                  border: none;
+                  font-size: 3.5rem;
+                  color: rgba(168, 168, 168, .5);
+                  cursor: pointer;
+                  transition: all .3s ease-out;
+
+                  &:hover {
+                        color: $font-color-secondary;
+                  }
+            }
+      }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+      .clients-feeback-slider {
+            .clients-feedback-slider-main {
+                  .clients-feedback-slider-column {
+                        .client-feedback-slider-item {
+                              .feedback-desc {
+                                    line-height: 1;
+                                    font-size: 1.6rem;
+                              }
+
+                              .client-info {
+                                    align-items: center;
+
+                                    .client-img {
+                                          height: 4rem;
+                                          width: 4rem;
+                                    }
+
+                                    .client-name-box {
+                                          .client-name,
+                                          .client-job-position {
+                                                font-size: 1.3rem;
+                                          }
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+
+      .clients-feedback-title-box {
+            .double-quotes-img {
+                  width: 3.2rem;
+                  height: 2.19rem;
+                  margin-right: .5rem;
+            }
+
+            .clients-feedback-title {
+                  font-size: 3.5rem;
+            }
+      }
+}
+
+@media (min-width:320px) and (max-width: 767px) {
+      .clients-feedback {
+            height: auto;
+            justify-content: center;
+      }
+      
+      .clients-feeback-slider {
+            height: 37rem;
+            justify-content: center;
+
+            .clients-feedback-slider-main {
+                  margin-right: 2rem;
+                  width: auto;
+
+                  .clients-feedback-slider-column {
+                        transform: translateY(-37rem);
+                        max-width: 30rem;
+
+                        .client-feedback-slider-item {
+                              height: 35rem;
+                              justify-content: center;
+                              padding-top: 1rem;
+                              padding-bottom: 1rem;
+                              max-width: 30rem;
+
+                              .feedback-desc {
+                                    line-height: 1.2;
+                                    font-size: 1.3rem;
+                                    text-align: center;
+                                    margin-bottom: 1rem;
+                              }
+
+                              .client-info {
+                                    flex-direction: column;
+                                    align-items: center;
+                                    height: auto;
+
+                                    .client-img {
+                                          height: 4rem;
+                                          width: 4rem;
+                                          margin-bottom: .5rem;
+                                          margin-right: 0;
+                                    }
+
+                                    .client-name-box {
+
+                                          .client-name,
+                                          .client-job-position {
+                                                font-size: 1.3rem;
+                                                text-align: center;
+                                          }
+                                    }
+                              }
+                        }
+                  }
+            }
+
+            .clients-feedback-slider-btns {
+                  height: 100%;
+                  width: calc(100% - 82.5%);
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+
+                  .slider-btn {
+                        height: 4.1rem;
+                        width: auto;
+                        background: transparent;
+                        border: none;
+                        font-size: 3.5rem;
+                        color: rgba(168, 168, 168, .5);
+                        cursor: pointer;
+                        transition: all .3s ease-out;
+
+                        &:hover {
+                              color: $font-color-secondary;
+                        }
+                  }
+            }
+      }
+
+      .clients-feedback-title-box {
+            height: auto;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+
+            .double-quotes-img {
+                  width: 3.2rem;
+                  height: 2.19rem;
+                  margin-right: .5rem;
+            }
+
+            .clients-feedback-title {
+                  max-height: 100%;
+                  height: auto;
+                  width: auto;
+                  font-size: 3rem;    
+
+                  br {
+                        display: none;
+                  }
+            }
+      }
+}

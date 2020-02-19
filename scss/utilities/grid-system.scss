@@ -1,0 +1,57 @@
+.row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+}
+
+[class*="col-"] {
+      padding: 0 1rem;
+}
+
+$xs: 320px;
+$sm: 480px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$columns: 12;
+
+@media (min-width: $xs) {
+      @for $i from 1 through $columns {
+            .col-xs-#{$i} {
+                  flex: 0 0 100% / $columns * $i;
+            }
+      }
+}
+
+@media (min-width: $sm) {
+      @for $i from 1 through $columns {
+            .col-sm-#{$i} {
+                  flex: 0 0 100% / $columns * $i;
+            }
+      }
+}
+
+@media (min-width: $md) {
+      @for $i from 1 through $columns {
+            .col-md-#{$i} {
+                  flex: 0 0 100% / $columns * $i;
+            }
+      }
+}
+
+@media (min-width: $lg) {
+      @for $i from 1 through $columns {
+            .col-lg-#{$i} {
+                  flex: 0 0 100% / $columns * $i;
+            }
+      }
+}
+
+@media (min-width: $xl) {
+      @for $i from 1 through $columns {
+            .col-xl-#{$i} {
+                  flex: 0 0 100% / $columns * $i;
+            }
+      }
+}

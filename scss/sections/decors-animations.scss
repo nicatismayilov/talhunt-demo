@@ -1,0 +1,372 @@
+.decor {
+      animation: moveUpBottom 5.5s ease-in-out 0s infinite;
+      animation-fill-mode: backwards;
+}
+
+.decor-bigger {
+      height: 5.1rem;
+      width: 5.1rem;
+}
+
+.decor-big {
+      height: 4.2rem;
+      width: 4.2rem;
+}
+
+.decor-small {
+      height: 3.8rem;
+      width: 3.8rem;
+}
+
+.decor-smaller {
+      height: 2.6rem;
+      width: 2.6rem;
+}
+
+.bg-dark {
+      background-color: #9682bf;
+      opacity: .54;
+}
+
+.bg-light {
+      background-color: #faae4b;
+      opacity: .54;
+}
+
+.bg-medium {
+      background-color: #f05a28;
+      opacity: .54;
+}
+
+#decor-1 {
+      position: absolute;
+      top: 8.6rem;
+      right: 4.8rem;
+}
+
+#decor-2 {
+      position: absolute;
+      top: 40.8rem;
+      left: 63rem;
+}
+
+#decor-3 {
+      position: absolute;
+      top: 51.6rem;
+      right: 26.8rem;
+      animation-duration: 5s;
+}
+
+#decor-4 {
+      position: absolute;
+      top: 3rem;
+      left: 30.4rem;
+}
+
+#decor-5 {
+      position: absolute;
+      top: 74.5rem;
+      left: 67.2rem;
+      animation-duration: 4s;
+}
+
+#decor-6 {
+      position: absolute;
+      top: 78.3rem;
+      left: 110.4rem;
+      animation-duration: 3s;
+}
+
+#decor-7 {
+      position: absolute;
+      top: 80.9rem;
+      left: 21.9rem;
+      animation-duration: 3s;
+}
+
+#decor-8 {
+      position: absolute;
+      top: 4.5rem;
+      left: 59.3rem;
+      animation-duration: 5s;
+}
+
+#decor-9 {
+      position: absolute;
+      top: 34.7rem;
+      right: -1rem;
+      animation-duration: 5s;
+}
+
+#decor-10 {
+      position: absolute;
+      top: 51.4rem;
+      left: 74.7rem;
+      animation-duration: 5s;
+}
+
+#decor-11 {
+      position: absolute;
+      top: 12.2rem;
+      left: -1rem;
+      animation-duration: 5s;
+}
+
+#decor-12 {
+      position: absolute;
+      top: 38.5rem;
+      left: 56.8rem;
+      animation-duration: 5s;
+}
+
+#decor-13 {
+      position: absolute;
+      top: 4.9rem;
+      left: 92rem;
+      animation-duration: 5s;
+}
+
+#decor-14 {
+      position: absolute;
+      top: 30.5rem;
+      right: 0;
+      animation-duration: 5s;
+}
+
+#decor-15 {
+      position: absolute;
+      top: 2.1rem;
+      left: 6rem;
+      animation-duration: 5s;
+}
+
+#decor-16 {
+      position: absolute;
+      top: 7.5rem;
+      right: 23.1rem;
+      animation-duration: 5s;
+}
+
+#decor-17 {
+      position: absolute;
+      top: 10.1rem;
+      left: 23.9rem;
+      animation-duration: 5s;
+}
+
+#decor-18 {
+      position: absolute;
+      top: 62.5rem;
+      right: 5.8rem;
+      animation-duration: 5s;
+}
+
+@keyframes moveUpBottom {
+      0% {
+            transform: translateY(0);
+      }
+
+      50% {
+            transform: translateY(-4rem);
+      }
+
+      100% {
+            transform: translateY(0);
+      }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+      #decor-1 {
+            top: 30%;
+            right: .5rem;
+      }
+
+      #decor-2 {
+            top: 80%;
+            left: 45%;
+      }
+
+      #decor-3 {
+            top: 90%;
+            right: 20%;
+      }
+      // ------------------------------
+      #decor-4 {
+            top: 5%;
+            left: 10%;
+      }
+
+      #decor-5 {
+            top: 90%;
+            left: 45%;
+      }
+
+      #decor-6 {
+            top: 95%;
+            left: 80%;
+      }
+
+      #decor-7 {
+            top: 100%;
+            left: 10%;
+      }
+      // -------------------------
+      #decor-8 {
+            top: 5%;
+            left: 50%;
+      }
+
+      #decor-9 {
+            top: 70%;
+            left: 95%;
+      }
+
+      #decor-10 {
+            top: 95%;
+            left: 65%;
+      }
+      // -----------------------------
+      #decor-11 {
+            top: 20%;
+            left: 5%;
+      }
+
+      #decor-12 {
+            top: 90%;
+            left: 40%;
+      }
+      // --------------------------------
+      #decor-13 {
+            top: 10%;
+            left: 80%;
+      }
+
+      #decor-14 {
+            top: 80%;
+            left: 100%;
+      }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+      .decor-bigger {
+            height: 4.08rem;
+            width: 4.08rem;
+      }
+
+      .decor-big {
+            height: 3.36rem;
+            width: 3.36rem;
+      }
+
+      .decor-small {
+            height: 3.024rem;
+            width: 3.024rem;
+      }
+
+      .decor-smaller {
+            height: 2.08rem;
+            width: 2.08rem;
+      }
+
+      #decor-1 {
+            top: 30%;
+            right: .5rem;
+      }
+
+      #decor-2 {
+            top: 80%;
+            left: 45%;
+      }
+
+      #decor-3 {
+            top: 90%;
+            right: 20%;
+      }
+
+      // ------------------------------
+      #decor-4 {
+            top: 5%;
+            left: 10%;
+      }
+
+      #decor-5 {
+            top: 90%;
+            left: 45%;
+      }
+
+      #decor-6 {
+            top: 95%;
+            left: 80%;
+      }
+
+      #decor-7 {
+            top: 100%;
+            left: 10%;
+      }
+
+      // -------------------------
+      #decor-8 {
+            top: 5%;
+            left: 50%;
+      }
+
+      #decor-9 {
+            top: 70%;
+            left: 95%;
+      }
+
+      #decor-10 {
+            top: 95%;
+            left: 65%;
+      }
+
+      // -----------------------------
+      #decor-11 {
+            top: 20%;
+            left: 5%;
+      }
+
+      #decor-12 {
+            top: 90%;
+            left: 40%;
+      }
+
+      // --------------------------------
+      #decor-13 {
+            top: 10%;
+            left: 80%;
+      }
+
+      #decor-14 {
+            top: 80%;
+            left: 100%;
+      }
+
+      // --------------------------------
+
+      #decor-15 {
+            top: 5%;
+            left: 5%;
+      }
+
+      #decor-16 {
+            top: 10%;
+            right: 20%;
+      }
+
+      #decor-17 {
+            top: 20%;
+            left: 20%;
+      }
+
+      #decor-18 {
+            top: 100%;
+            right: 2%;
+      }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+      .decor {
+            display: none;
+      }
+}

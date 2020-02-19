@@ -1,0 +1,312 @@
+.section-hero {
+      width: 100%;
+      height: calc(100vh - 9rem);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+}
+
+.section-hero-content {
+      align-items: center;
+}
+
+.section-hero-text-box {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+}
+
+.section-hero-link {
+      font-family: $font-montserrat;
+      font-size: 20px;
+      color: $font-color-secondary;
+      font-weight: 600;
+      letter-spacing: normal;
+      text-decoration: none;
+}
+
+.link-orange:link,
+.link-orange:visited {
+      transition: all .4s ease-out;
+}
+
+.link-orange:hover {
+      color: #322754;
+}
+
+.link-orange:hover > .circle {
+      color: #322754;
+      border-color: #322754;
+}
+
+.heading-main {
+      font-size: 5.4rem;
+      color: $font-color-primary;
+      font-weight: 700;
+      text-transform: capitalize;
+      max-width: 100%;
+}
+
+.section-hero-text {
+      max-width: 100%;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      color: $font-color-primary;
+      margin-bottom: 3.5rem;
+}
+
+.section-hero-text-btns {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+}
+
+.watch-link {
+      display: flex;
+      font-size: 1.6rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: $font-color-secondary;
+      margin-left: 1.5rem;
+      text-align: center;
+      position: relative;
+}
+
+.bg-transparent {
+      height: 2rem;
+      width: 2rem;
+      background: transparent;
+      border: .15rem solid $font-color-secondary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all .4s ease-out;
+}
+
+.circle-small {
+      margin-right: .6rem;
+}
+
+.play-icon {
+      font-size: 1rem;
+      font-weight: 400;
+      transform: translateX(.1rem);
+}
+
+.section-hero-img-box {
+      position: relative;
+}
+
+.section-hero-img {
+      max-width: 100%;
+      width: 100%;
+      object-fit: contain;
+}
+
+.play-btn:link,
+.play-btn:visited {
+      height: 10.4rem;
+      width: 10.4rem;
+      background-color: rgba($color: $font-color-secondary, $alpha: .24);
+      position: absolute;
+      left: 7.2rem;
+      bottom: 9.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      transition: all .4s ease-in;
+}
+
+.play-btn::before {
+      content: '';
+      height: 100%;
+      width: 100%;
+      background-color: rgba($color: $font-color-secondary, $alpha: .24);
+      opacity: 0;
+      position: absolute;
+      border-radius: 100%;
+}
+
+.play-btn:hover::before {
+      animation-name: hoverScaleMoveOut;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+}
+
+.play-btn:hover .circle-big {
+      border-color: #322754;
+}
+
+.play-btn:hover .play-icon-btn {
+      color: #322754;
+}
+
+.circle {
+      border-radius: 100%;
+}
+
+.play-icon-btn {
+      font-size: 4rem;
+      color: $font-color-secondary;
+      transform: translateX(10%);
+      transition: all .2s ease-out .2s;
+}
+
+.circle-big {
+      height: 7.6rem;
+      width: 7.6rem;
+      transition: all .2s ease-in-out .2s;
+}
+
+@keyframes hoverScaleMoveOut {
+      0% {
+            opacity: .8;
+      }
+
+      50% {
+            transform: scale(1.2);
+      }
+
+      100% {
+            transform: scale(1.5);
+            opacity: 0;
+      }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+      .play-btn:link, .play-btn:visited {
+            height: 9rem;
+            width: 9rem;
+            left: 6rem;
+            bottom: 7.6rem;
+
+            .circle-big {
+                  height: 75%;
+                  width: 75%;
+
+                  .play-icon-btn {
+                        font-size: 3.5rem;
+                  }
+            }
+      }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+      .section-hero-link {
+            font-size: 1.5rem;
+      }
+
+      .heading-main {
+            font-size: 4rem;
+      }
+
+      .section-hero-text {
+            font-size: 1.3rem;
+      }
+
+      .watch-link {
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+      }
+
+      .play-btn:link,
+      .play-btn:visited {
+            height: 7rem;
+            width: 7rem;
+            left: 15%;
+            bottom: 20%;
+
+            .circle-big {
+                  height: 75%;
+                  width: 75%;
+
+                  .play-icon-btn {
+                        font-size: 3.2rem;
+                  }
+            }
+      }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+      .section-hero {
+            height: auto;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+
+            .container {
+                  height: 100%;
+            }
+      }
+
+      .section-hero-link {
+            text-align: center;
+            width: 100%;
+            font-size: .9rem;
+      }
+
+      .heading-main {
+            font-size: 2.4rem;
+            width: 95%;
+            text-align: center;
+            margin: 0 auto;  }
+
+      .section-hero-text {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+      }
+
+      .watch-link {
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+      }
+
+      .section-hero-text-btns {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            .btn-rounded {
+                  margin-bottom: 1rem;
+                  height: 3rem;
+                  font-size: 1.3rem;
+            }
+            margin-bottom: 2rem;
+      }
+
+      .play-btn:link,
+      .play-btn:visited {
+            width: 18%;
+            height: 25%;
+            left: 15%;
+            bottom: 20%;
+
+            .circle-big {
+                  height: 75%;
+                  width: 75%;
+
+                  .play-icon-btn {
+                        font-size: 2rem;
+                  }
+            }
+      }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+      .play-btn:link,
+      .play-btn:visited {
+            .circle-big {
+                  .play-icon-btn {
+                        font-size: 4rem;
+                  }
+            }
+      }
+
+      .section-hero-link {
+            font-size: 1.5rem;
+      }
+}
