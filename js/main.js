@@ -106,18 +106,9 @@ btnBurgerBox.addEventListener('click', () => {
 })
 
 window.addEventListener('resize', () => {
-      screen.width >= 768 ? {
-            if (stateActive) {
-                  btnBurger.classList.remove('burger-btn-active');
-                        navBtns.style.display = 'flex';
-                  
-            }
-      } : {
-            if (stateActive) {
-                  btnBurger.classList.remove('burger-btn-active');
-                        navBtns.style.display = 'none';
-            }
-      }
+      screen.width >= 768 ? 
+            navBtns.style.display = 'flex' : 
+            navBtns.style.display = 'none'
 
       screen.width >= 768 ?
             slider.style.transform = `translateY(${-24.9}rem)` :
